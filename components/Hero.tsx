@@ -24,7 +24,7 @@ const Hero = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2, ease: 'easeOut' }}
-            className="text-4xl md:text-6xl lg:text-7xl font-light text-slate-700 leading-tight"
+            className="text-4xl md:text-6xl lg:text-7xl font-light text-slate-800 leading-tight"
           >
             AI/ML Enthusiast
             <br />
@@ -35,7 +35,7 @@ const Hero = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4, ease: 'easeOut' }}
-            className="text-lg md:text-xl text-slate-500 max-w-3xl mx-auto text-balance"
+            className="text-lg md:text-xl text-slate-600 max-w-3xl mx-auto text-balance"
           >
             Passionate about Artificial Intelligence and Machine Learning, I am committed to driving 
             impactful innovation and creating meaningful solutions. As an AI Prompt Specialist, I excel 
@@ -52,7 +52,7 @@ const Hero = () => {
             <motion.button
               whileHover={{ scale: 1.05, y: -2 }}
               whileTap={{ scale: 0.95 }}
-              className="px-8 py-4 bg-slate-700 text-white rounded-xl font-medium shadow-lg hover:shadow-xl transition-shadow duration-300"
+              className="px-8 py-4 bg-slate-800 text-white rounded-xl font-medium shadow-lg hover:shadow-xl transition-shadow duration-300"
             >
               View My Work
             </motion.button>
@@ -62,7 +62,7 @@ const Hero = () => {
             <motion.button
               whileHover={{ scale: 1.05, y: -2 }}
               whileTap={{ scale: 0.95 }}
-              className="px-8 py-4 border border-slate-300 text-slate-700 rounded-xl font-medium hover:bg-slate-50 transition-colors duration-300"
+              className="px-8 py-4 border border-slate-400 text-slate-800 rounded-xl font-medium hover:bg-slate-50 transition-colors duration-300"
             >
               Get In Touch
             </motion.button>

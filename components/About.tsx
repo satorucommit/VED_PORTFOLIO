@@ -6,7 +6,7 @@ import Image from 'next/image';
 
 const About = () => {
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, threshold: 0.3 });
+  const isInView = useInView(ref, { once: true, amount: 0.3 });
 
   const stats = [
     { number: '15+', label: 'GitHub Projects' },
@@ -30,17 +30,17 @@ const About = () => {
                 initial={{ opacity: 0, y: 20 }}
                 animate={isInView ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.8, delay: 0.2, ease: 'easeOut' }}
-                className="text-3xl lg:text-5xl font-light text-slate-700"
+                className="text-3xl lg:text-5xl font-light text-slate-800"
               >
-                Driving AI
-                <span className="text-gradient font-normal"> Innovation</span>
+                <span className="italic font-light">Driving AI</span>
+                <span className="text-gradient italic font-light"> Innovation</span>
               </motion.h2>
               
               <motion.p
                 initial={{ opacity: 0, y: 20 }}
                 animate={isInView ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.8, delay: 0.4, ease: 'easeOut' }}
-                className="text-lg text-slate-500 leading-relaxed"
+                className="text-lg text-slate-600 leading-relaxed"
               >
                 With expertise as an AI Prompt Specialist, I excel at designing precise and creative 
                 prompts to enhance AI systems, unlocking their full potential for smarter and more 
@@ -52,7 +52,7 @@ const About = () => {
                 initial={{ opacity: 0, y: 20 }}
                 animate={isInView ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.8, delay: 0.6, ease: 'easeOut' }}
-                className="text-lg text-slate-500 leading-relaxed"
+                className="text-lg text-slate-600 leading-relaxed"
               >
                 By participating in courses, workshops, and hackathons, I stay updated with the latest 
                 advancements in the fast-changing tech landscape. Challenges inspire me to think beyond 
@@ -74,10 +74,10 @@ const About = () => {
                   transition={{ duration: 0.6, delay: 1 + index * 0.1, ease: 'easeOut' }}
                   className="text-center"
                 >
-                  <div className="text-2xl lg:text-3xl font-medium text-slate-700 mb-2">
+                  <div className="text-2xl lg:text-3xl font-medium text-slate-800 mb-2">
                     {stat.number}
                   </div>
-                  <div className="text-sm text-slate-500">{stat.label}</div>
+                  <div className="text-sm text-slate-600">{stat.label}</div>
                 </motion.div>
               ))}
             </motion.div>
@@ -105,11 +105,11 @@ const About = () => {
               transition={{ duration: 0.8, delay: 1, ease: 'easeOut' }}
               className="absolute -bottom-10 -left-20 bg-white p-6 rounded-xl shadow-xl z-20"
             >
-              <div className="text-sm text-slate-500 mb-2">Currently working on</div>
-              <div className="text-lg font-medium text-slate-700">AI/ML Projects</div>
+              <div className="text-sm text-slate-600 mb-2">Currently working on</div>
+              <div className="text-lg font-medium text-slate-800">AI/ML Projects</div>
               <div className="flex items-center mt-3 space-x-2">
                 <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
-                <div className="text-sm text-slate-500">In Progress</div>
+                <div className="text-sm text-slate-600">In Progress</div>
               </div>
             </motion.div>
           </motion.div>
