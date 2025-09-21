@@ -1,0 +1,190 @@
+/* ULTRA PERFORMANCE MODE - Maximum optimizations for Vedant Badgujar's Portfolio */
+
+/* Critical CSS for immediate rendering */
+* {
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+  will-change: auto;
+  box-sizing: border-box;
+}
+
+/* Ultra-aggressive mobile optimizations */
+@media (max-width: 767px) {
+  /* Disable ALL expensive operations */
+  * {
+    -webkit-backdrop-filter: none !important;
+    backdrop-filter: none !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+    filter: none !important;
+    border-radius: 0 !important;
+    background-image: none !important;
+  }
+  
+  /* Ultra-fast animations */
+  .motion-reduce {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  
+  /* Optimized font loading with minimal subset */
+  @font-face {
+    font-family: 'Inter';
+    font-display: swap;
+    src: local('Inter'), url('/fonts/inter-subset.woff2') format('woff2');
+    unicode-range: U+0020-007F;
+  }
+  
+  /* Maximum GPU acceleration */
+  .mobile-optimized {
+    will-change: transform;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+  }
+  
+  /* Minimal particle effects */
+  .particle-container {
+    opacity: 0.2;
+    display: none; /* Hide particles on very small screens */
+  }
+  
+  /* Ultra-optimized scrolling */
+  .scroll-container {
+    -webkit-overflow-scrolling: touch;
+    overflow-scrolling: touch;
+    scroll-behavior: auto !important;
+  }
+  
+  /* Disable smooth scrolling for performance */
+  html {
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Tablet optimizations */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .tablet-optimized {
+    will-change: transform;
+  }
+  
+  /* Medium particle density */
+  .particle-container {
+    opacity: 0.7;
+  }
+}
+
+/* Desktop optimizations */
+@media (min-width: 1024px) {
+  .desktop-enhanced {
+    will-change: transform, opacity;
+  }
+  
+  /* Full particle density */
+  .particle-container {
+    opacity: 1;
+  }
+}
+
+/* High DPI displays */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .high-dpi-optimized {
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+  }
+}
+
+/* Prefers reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  
+  .motion-safe {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
+/* Dark mode optimizations */
+@media (prefers-color-scheme: dark) {
+  .dark-optimized {
+    color-scheme: dark;
+  }
+}
+
+/* Ultra-minimal particle effects */
+.particle-minimal {
+  width: 2px;
+  height: 2px;
+  background: rgba(148, 163, 184, 0.08);
+  border-radius: 50%;
+  position: absolute;
+  pointer-events: none;
+  will-change: transform;
+}
+
+/* Performance-first animations with minimal resource usage */
+@keyframes ultraFadeIn {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 5px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.ultra-fade-in {
+  animation: ultraFadeIn 0.15s ease-out;
+}
+
+/* Memory-efficient image loading */
+.img-ultra-optimized {
+  image-rendering: optimizeSpeed;
+  image-rendering: -webkit-optimize-contrast;
+  object-fit: cover;
+  object-position: center;
+  will-change: auto;
+}
+
+/* Critical performance utilities */
+.critical-gpu {
+  transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
+  will-change: transform;
+}
+
+.ultra-scroll {
+  -webkit-overflow-scrolling: touch;
+  overflow-x: hidden;
+  overflow-y: auto;
+  scroll-behavior: auto; /* Always disable smooth scroll for performance */
+}
+
+/* Performance monitor (development only) */
+.perf-monitor {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  background: rgba(0, 0, 0, 0.9);
+  color: #00ff00;
+  padding: 4px 8px;
+  border-radius: 2px;
+  font-family: monospace;
+  font-size: 10px;
+  z-index: 9999;
+  display: none;
+  pointer-events: none;
+}
+
+.development .perf-monitor {
+  display: block;
+}

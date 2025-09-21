@@ -1,28 +1,43 @@
+/* Critical CSS - Above the fold styles */
+@layer critical {
+  .text-gradient {
+    @apply bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text text-transparent;
+  }
+  
+  .text-gradient-secondary {
+    @apply bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent;
+  }
+  
+  .bg-gradient-primary {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  }
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
   :root {
-    --background: 250 251 252; /* #FAFBFC */
-    --foreground: 30 41 59; /* #1e293b - darker slate */
+    --background: 255 255 255;
+    --foreground: 15 23 42;
     --card: 255 255 255;
-    --card-foreground: 30 41 59;
+    --card-foreground: 15 23 42;
     --popover: 255 255 255;
-    --popover-foreground: 30 41 59;
-    --primary: 100 116 139; /* #64748B */
+    --popover-foreground: 15 23 42;
+    --primary: 99 102 241;
     --primary-foreground: 248 250 252;
-    --secondary: 241 245 249; /* #F1F5F9 */
-    --secondary-foreground: 30 41 59;
+    --secondary: 241 245 249;
+    --secondary-foreground: 15 23 42;
     --muted: 248 250 252;
     --muted-foreground: 100 116 139;
-    --accent: 241 245 249;
-    --accent-foreground: 30 41 59;
+    --accent: 236 254 255;
+    --accent-foreground: 15 23 42;
     --destructive: 239 68 68;
     --destructive-foreground: 248 250 252;
     --border: 226 232 240;
     --input: 226 232 240;
-    --ring: 100 116 139;
+    --ring: 99 102 241;
     --radius: 0.75rem;
   }
 }
@@ -42,7 +57,39 @@
   }
   
   .text-gradient {
-    @apply bg-gradient-to-r from-slate-600 to-slate-400 bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text text-transparent;
+  }
+  
+  .text-gradient-secondary {
+    @apply bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent;
+  }
+  
+  .bg-gradient-primary {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  }
+  
+  .bg-gradient-secondary {
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  }
+  
+  .bg-gradient-accent {
+    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+  }
+  
+  .glass-effect {
+    @apply bg-white/10 backdrop-blur-lg border border-white/20;
+  }
+  
+  .dark .glass-effect {
+    @apply bg-black/10 backdrop-blur-lg border border-white/10;
+  }
+  
+  .glow-effect {
+    box-shadow: 0 0 20px rgba(99, 102, 241, 0.3);
+  }
+  
+  .dark .glow-effect {
+    box-shadow: 0 0 30px rgba(129, 140, 248, 0.4);
   }
 }
 

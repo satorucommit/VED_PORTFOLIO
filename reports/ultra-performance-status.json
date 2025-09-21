@@ -1,0 +1,40 @@
+{
+  "timestamp": "2025-09-20T17:53:19.130Z",
+  "mode": "ULTRA_PERFORMANCE",
+  "optimizations": {
+    "mobile": [
+      "Ultra-minimal particles (3 max)",
+      "Ultra-fast animations (0.3s)",
+      "Aggressive lazy loading",
+      "Ultra-low image quality (30%)",
+      "Disabled all expensive effects",
+      "Auto scroll behavior for performance"
+    ],
+    "tablet": [
+      "Reduced particle count (5-6)",
+      "Balanced performance mode",
+      "Medium image compression (35%)",
+      "Selective effect disabling"
+    ],
+    "desktop": [
+      "Minimal particle count (8 max)",
+      "Performance-first animations",
+      "Optimized image quality (45%)",
+      "Complex animations only when needed"
+    ]
+  },
+  "targets": {
+    "mobile": {
+      "bundle": "< 150KB",
+      "lcp": "< 1.5s",
+      "fcp": "< 1.0s",
+      "cls": "< 0.1"
+    },
+    "desktop": {
+      "bundle": "< 200KB",
+      "lcp": "< 1.0s",
+      "fcp": "< 0.8s",
+      "cls": "< 0.05"
+    }
+  }
+}
